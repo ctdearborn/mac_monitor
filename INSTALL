@@ -1,0 +1,13 @@
+sudo apt update
+sudo apt upgrade
+sudo apt install smokeping
+sudo apt install nmap
+sudo pip install python_arptable
+sudo apt install python3-scapy
+sudo systemctl enable smokeping
+
+Add the following line to /etc/crontab:
+*/5 * * * * root [path to mac_monitor.py]/mac_monitor.py
+# Example:
+# */5 * * * * root /home/pi/mac_monitor/mac_monitor.py
+
