@@ -18,6 +18,9 @@ clone mac_monitor from github
 ensure the smokeping service is enabled:
 >sudo systemctl enable smokeping
 
+Edit maclist.txt and add mac addresses, one per line:
+>a1:b2:c3:d4:e5:f6
+
 run the mac_monitor once (need root privileges)
 >sudo ./mac_monitor.py
 
